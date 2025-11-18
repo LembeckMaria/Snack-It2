@@ -1,0 +1,944 @@
+/* Base Styles */
+:root {
+    --primary-color:#cf92a5;
+    --secondary-color: #C75C71;
+    --third-color:#881c34;
+    --other-color:  #560F20;
+    --text-color: #333333;
+    --light-gray: #F5F5F5;
+    --medium-gray: hsl(37, 100%, 96%);
+    --dark-gray: #666666;
+    --white: #F5F5F5;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 0;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.recipes-grid .container {
+    width: 70%; 
+    margin-left: 90px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+        background-color: var(--primary-color);
+            color: var(--white);
+                padding: 0.8rem 1.5rem;
+                    border-radius: 4px;
+                        font-weight: 600;
+                            border: none;
+                                cursor: pointer;
+                                    transition: var(--transition);
+                                    }
+
+                                    .btn:hover {
+                                        background-color: var(--secondary-color);
+                                            transform: translateY(-2px);
+                                            }
+
+                                            .btn-outline {
+                                                display: inline-block;
+                                                    background-color: transparent;
+                                                        color: var(--primary-color);
+                                                            padding: 0.7rem 1.4rem;
+                                                                border-radius: 4px;
+                                                                    font-weight: 600;
+                                                                        border: 2px solid var(--primary-color);
+                                                                            cursor: pointer;
+                                                                                transition: var(--transition);
+                                                                                }
+
+                                                                                .btn-outline:hover {
+                                                                                    background-color:var(--secondary-color);
+                                                                                        color: var(--white);
+                                                                                            border: 0px ;
+                                                                                                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+                                                                                                }
+
+                                                                                                .btn-text {
+                                                                                                    color: var(--primary-color);
+                                                                                                        font-weight: 600;
+                                                                                                            position: relative;
+                                                                                                                transition: var(--transition);
+                                                                                                                }
+
+                                                                                                                .btn-text::after {
+                                                                                                                    content: '';
+                                                                                                                        position: absolute;
+                                                                                                                            bottom: -2px;
+                                                                                                                                left: 0;
+                                                                                                                                    width: 0;
+                                                                                                                                        height: 2px;
+                                                                                                                                            background-color: var(--primary-color);
+                                                                                                                                                transition: var(--transition);
+                                                                                                                                                }
+
+                                                                                                                                                .btn-text:hover::after {
+                                                                                                                                                    width: 100%;
+                                                                                                                                                    }
+
+                                                                                                                                                    /* Header */
+                                                                                                                                                    header {
+                                                                                                                                                        background-color: var(--white);
+                                                                                                                                                            box-shadow: var(--shadow);
+                                                                                                                                                                position: sticky;
+                                                                                                                                                                    top: 0;
+                                                                                                                                                                        z-index: 1000;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        header .container {
+                                                                                                                                                                            display: flex;
+                                                                                                                                                                                justify-content: space-between;
+                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                        padding: 1rem 15px;
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        .logo h1 {
+                                                                                                                                                                                            font-size: 1.8rem;
+                                                                                                                                                                                                color: var(--primary-color);
+                                                                                                                                                                                                    margin: 0;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .logo {
+                                                                                                                                                                                                        margin: 0%;
+                                                                                                                                                                                                            padding: 0;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .logo img {
+                                                                                                                                                                                                                width: 110px;
+                                                                                                                                                                                                                    padding: 0;
+                                                                                                                                                                                                                        margin: 0;
+                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                        .menu {
+                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            .menu li {
+                                                                                                                                                                                                                                margin-left: 1.5rem;
+                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                .menu a {
+                                                                                                                                                                                                                                    font-weight: 500;
+                                                                                                                                                                                                                                        padding: 0.5rem 0;
+                                                                                                                                                                                                                                            position: relative;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            .menu a::after {
+                                                                                                                                                                                                                                                content: '';
+                                                                                                                                                                                                                                                    position: absolute;
+                                                                                                                                                                                                                                                        bottom: 0;
+                                                                                                                                                                                                                                                            left: 0;
+                                                                                                                                                                                                                                                                width: 0;
+                                                                                                                                                                                                                                                                    height: 2px;
+                                                                                                                                                                                                                                                                        background-color: var(--primary-color);
+                                                                                                                                                                                                                                                                            transition: var(--transition);
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                            .menu a:hover::after,
+                                                                                                                                                                                                                                                                            .menu a.active::after {
+                                                                                                                                                                                                                                                                                width: 100%;
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                .mobile-menu-btn {
+                                                                                                                                                                                                                                                                                    display: none;
+                                                                                                                                                                                                                                                                                        background: none;
+                                                                                                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                .mobile-menu-btn span {
+                                                                                                                                                                                                                                                                                                    display: block;
+                                                                                                                                                                                                                                                                                                        width: 25px;
+                                                                                                                                                                                                                                                                                                            height: 3px;
+                                                                                                                                                                                                                                                                                                                background-color: var(--text-color);
+                                                                                                                                                                                                                                                                                                                    margin: 5px 0;
+                                                                                                                                                                                                                                                                                                                        transition: var(--transition);
+                                                                                                                                                                                                                                                                                                                        }
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    padding: 5rem 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+/* Categories Section */
+.categories {
+    
+    padding: 5rem 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+    height: 260px;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.category-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+#filmes-series-img {
+    background-image: url('../images/filmes-series.jpg');
+}
+
+#veganas-img {
+    background-image: url('../images/veganas.jpg');
+}
+
+#fitness-img {
+    background-image: url('../images/fitness.jpg');
+}
+
+#originais-img {
+    background-image: url('../images/originais.jpg');
+}
+
+.category-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* Featured Section */
+.featured {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+
+
+    .recipe-card {
+        width: 100%;
+    }
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.recipe-card {
+    width: 700px;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    margin-top: 40px;
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#featured-1 {
+    background-image: url('../images/waffle.jpg');
+}
+
+#featured-2 {
+    background-image: url('../images/hamburguer-vegano.jpg');
+}
+
+#featured-3 {
+    background-image: url('../images/hamburguer-salmao.webp');
+}
+
+.recipe-content {
+    padding: 1.5rem;
+}
+
+.recipe-category {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+}
+
+.recipe-card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.recipe-card p {
+    color: var(--dark-gray);
+    margin-bottom: 1.2rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 5rem 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.newsletter-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 4px 4px 0;
+    background-color: var(--secondary-color);
+}
+
+.newsletter-form .btn:hover {
+    background-color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-color);
+    color: var(--white);
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    margin-bottom: 1.2rem;
+    color: var(--primary-color);
+}
+
+.footer-links ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons p {
+    display: flex;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Recipe Pagz Styles */
+.page-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.recipe-detail {
+    padding: 4rem 0;
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.recipe-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.recipe-image {
+    width: 100%;
+    max-width:800px;
+    margin: 0 auto 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.ingredients, .instructions {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.ingredients h3, .instructions h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.ingredients ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.ingredients ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.instructions ol {
+    list-style-position: inside;
+    counter-reset: item;
+}
+
+.instructions ol li {
+    margin-bottom: 1rem;
+    counter-increment: item;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.instructions ol li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* About Page */
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-text h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.login-box h2 {
+    font-size: 35px;
+}
+
+.all-container {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    height: 800px;
+    background-color:var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .category-img {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .menu.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .menu li {
+        margin: 0.8rem 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter-form .btn {
+        border-radius: 4px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 110px;
+  height: 600px;
+  max-width: 600px;
+  background: white;
+  padding: 70px 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.login-box {
+  position: relative;
+  z-index: 2;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.options {
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.options a {
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+
+button {
+  padding: 12px;
+  background-color:var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888;
+}
+
+.signup-text a {
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Background blob effect (optional decorative layer) */
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: -120px;
+  width: 300px;
+  height: 300px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.login-container::after {
+  content: "";
+  position: absolute;
+  top: 450px;
+  left: 500px;
+  width: 300px;
+  height: 300px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-recipe {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 18px;
+    
+}
+
+
+.container-recipe select {
+    background-color: #9ab69900;
+    border-radius: 5px;
+    border:  white solid 2px;
+    color: #F5F5F5;
+    text-shadow: #2c2c2c4b 0px 0px 10px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.cadastro-container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 110px;
+  height: 600px;
+  max-width: 600px;
+  background: white;
+  padding: 70px 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+/* 1. SEÇÃO PRINCIPAL: Alinha o Título, Introdução e o Grid verticalmente (em coluna) */
+.developers-section {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;   
+    flex-direction: column;  /* Centraliza o conteúdo horizontalmente (se não houver largura fixa) */  /* Organiza os itens da seção verticalmente */
+}
+
+
+
+.developers-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    /* ALTERAÇÃO CHAVE: Distribui os itens uniformemente */
+    justify-content: space-between; 
+    gap: 30px; 
+    width: 100%;
+    /* Adicione padding lateral para não colar nas bordas */
+    padding: 0 10px; 
+    max-width: 1200px; /* Use o max-width que for melhor para seu layout */
+    margin: 0 auto; /* Centraliza o grid */
+}
+
+.mabi-isa {
+    position: absolute;
+    margin-left: 250px;
+}
+
+.duda-karina {
+    margin-left: 350px;
+}
+
+/* 3. CARD INDIVIDUAL */
+.developer-card {
+    /* Largura que você definiu */
+    max-width: 300px; 
+    /* Centraliza o texto */
+    text-align: center; 
+   
+}
+
+/* 4. IMAGEM */
+.developer-photo img {
+    /* Garante que a imagem preencha a largura do card */
+    width: 100%; 
+    /* Define uma altura consistente */
+    height: 250px; 
+    /* Preenche o espaço mantendo a proporção (crucial!) */
+    object-fit: cover; 
+    border-radius: 30px;
+    display: block;
+    box-shadow: 1px 1px 40px  #c75c7191;
+    transition: 0.3s;
+    
+}
+
+.developer-photo img:hover {
+    transform: scale(1.03);
+     box-shadow: 1px 1px 45px  #c75c71a1;     
+}
+
+
+/* 5. INFORMAÇÕES DO DESENVOLVEDOR */
+.developer-info {
+    padding: 10px 0;
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .categories, .featured, .newsletter {
+        padding: 3rem 0;
+    }
+}
+.arrow {
+    color: #C75C71;
+    font-size: 30px;
+}
+

@@ -1,0 +1,813 @@
+x:root {
+    --primary-color:#ECD8E0;
+    --secondary-color: #C75C71;
+    --third-color:#bd7181;
+    --other-color:  #661528;
+    --text-color: #333333;
+    --light-gray: #F5F5F5;
+    --medium-gray: hsl(37, 100%, 96%);
+    --dark-gray: #666666;
+    --white: #F5F5F5;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15px;
+    margin-bottom: 30px;
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    transition: var(--transition);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#cf92a5;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+         h1{
+            font-size: 45px;
+            z-index: 1;
+            color: hsl(346, 85%, 95%);
+           
+        }
+    }  
+     
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15px;
+}
+
+.image-mat {
+    position: absolute;
+    background-image: url('imgs/bolo-chocolate-matilda.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-mat.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-dama {
+    position: absolute;
+    background-image: url('imgs/espaguette.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-dama.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-apf {
+    position: absolute;
+    background-image: url('imgs/apfelstrudel.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-apf.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-raspadinha {
+    position: absolute;
+    background-image: url('imgs/raspadinha-de-melancia-1024x683.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-raspadinha.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-rat {
+    position: absolute;
+    background-image: url('imgs/ratatoullie.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-rat.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-seren {
+    position: absolute;
+    background-image: url('imgs/Serendipity-Frozen-Hot-Chocolate.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-seren.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+
+.image-beterraba {
+    position: absolute;
+    background-image: url('imgs/hamburguer-beterraba.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-beterraba.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-manteiga {
+    position: absolute;
+    background-image: url('imgs/manteiga-caju.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-manteiga.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-bibimbap {
+    position: absolute;
+    background-image: url('imgs/bibimbap.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-bibimbap.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-omelete {
+    position: absolute;
+    background-image: url('imgs/omelete.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-omelete.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+
+.image-stroopwafel {
+    position: absolute;
+    background-image: url('imgs/stroopwafel.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-stroopwafel.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+ 
+.image-strogonoff-vegano {
+    position: absolute;
+    background-image: url('imgs/strogonoff-vegano.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-strogonoff-vegano.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-quibe-abobora {
+    position: absolute;
+    background-image: url('imgs/quibe-de-abobora.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-quibe-abobora.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+.image-quibe-abobora {
+    position: absolute;
+    background-image: url('imgs/quibe-de-abobora.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-quibe-abobora.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-pao-de-queijo-fit {
+    position: absolute;
+    background-image: url('imgs/pao-de-queijo-fit.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-pao-de-queijo-fit.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+
+.image-espaguette-abo {
+    position: absolute;
+    background-image: url('imgs/espaguette-abobrinha.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-espaguette-abo.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-ceviche-tilapia {
+    position: absolute;
+    background-image: url('imgs/ceviche-tilapia.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-ceviche-tilapia.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-ham-frang-abo {
+    position: absolute;
+    background-image: url('imgs/hamburguer-frango-abo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-ham-frang-abo.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-tapioca-fit {
+    position: absolute;
+    background-image: url('imgs/tapioca-fit.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-tapioca-fit.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-torta-frang-bttdoce {
+    position: absolute;
+    background-image: url('imgs/torta-frang-bttdoce.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-torta-frang-bttdoce.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+
+.image-peito-de-frango-fitness {
+    position: absolute;
+    background-image: url('imgs/peito-de-frango-arroz.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-peito-de-frango-fitness.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+
+.image-strogonoff {
+    position: absolute;
+    background-image: url('imgs/strogonoff-fitness.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-strogonoff.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image {
+    position: absolute;
+    background-image: url('imgs/notherwaffle.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+
+.image.fixo{
+    position: fixed;
+    top: 200px;     
+    margin-top: 5px; 
+}
+
+.all h2 {
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+.image:hover {
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+    transform: scale(1.01);
+}
+
+
+.container-recipe {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+
+    h2 {
+        font-size: 37px;
+        margin-top: 50px;
+    }
+
+
+    .desc p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 30px;
+        color: #bd7181;
+    }
+
+    .ingredients ul{
+        margin-top: 50px;
+        list-style: inside;
+        font-size: 18px;
+    }
+
+     .preparo{
+        margin-top: 50px;
+        margin-left: 17px;
+    }
+
+    .preparo ul{
+        margin-top: 30px;
+        list-style: decimal;
+        font-size: 19px;
+        margin-left: 10px;
+    }
+
+    .preparo li {
+        margin-top: 20px;
+    }
+
+    .utensilios{
+        margin-top: 50px;
+    }
+
+     .utensilios ul{
+        margin-top: 30px;
+        list-style: inside;
+        font-size: 19px;
+    }
+
+
+
+    .espec {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .time {
+        width: 140px;
+        height: 140px;
+        background-color:var(--third-color);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+        transition-duration: 0.2s;
+
+        i {
+            color: var(--other-color);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 35px;
+        }
+
+        li {
+            color: var(--other-color);
+            list-style: none;
+        }
+    }
+    .time:hover {
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+        transform: scale(1.01);
+    }
+
+    .people {
+        width: 140px;
+        height: 140px;
+        background-color: var(--third-color);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+        transition-duration: 0.2s;
+
+        i {
+            color: var(--other-color);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 35px;
+        }
+
+        li {
+            color: var(--other-color);
+            list-style: none;
+        }
+    }
+}
+    .people:hover {
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+        transform: scale(1.01);
+    }
+
+    .level {
+        width: 140px;
+        height: 140px;
+        background-color: var(--third-color);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+        transition-duration: 0.2s;
+
+        i {
+            color: var(--other-color);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 35px;
+        }
+
+        li {
+            color: var(--other-color);
+            list-style: none;
+        }
+    }
+    .level:hover {
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+        transform: scale(1.01);
+    }
+
+ .logo {
+    margin: 0%;
+    padding: 0;
+}
+
+.logo img {
+    width: 130px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.all {
+    width: 50%;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .container-recipe {
+        padding: 20px 10px;
+    }
+
+    .recipe {
+        padding: 20px;
+    }
+
+    .recipe .name h1 {
+        font-size: 2rem;
+    }
+
+    .recipe h2 {
+        font-size: 1.5rem;
+    }
+}
+
+

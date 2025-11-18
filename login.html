@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Cadastro - SnackIt</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones Font Awesome -->
+    <script src="https://kit.fontawesome.com/23a7e280be.js" crossorigin="anonymous"></script>
+
+    <style>
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo_snack_it.png" alt="">
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="filmes-series.html">Filmes & Séries</a></li>
+                    <li><a href="veganas.html">Veganas</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="originais.html">Originais</a></li>
+                    <li><a href="sobre.html"><i class="fa-solid fa-question"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="login.html" class="active"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="login-container">
+            <div class="login-box">
+
+                <!-- LOGIN -->
+                <div id="login-form" class="form-container active">
+                    <h2>Login</h2>
+                    <form action="Login_PHP/login.php" method="POST">
+                        <input type="text" name="nome_usuario" placeholder="Usuário" required />
+                        <input type="password" name="senha" placeholder="Senha" required />
+                        <div class="options">
+                            <a href="#">Esqueceu a <strong>senha?</strong></a>
+                        </div>
+                        <button type="submit">Log in</button>
+                    </form>
+                    <p class="signup-text">Não tem uma conta? <a href="#" id="show-register">Registre-se</a></p>
+                </div>
+
+                <!-- CADASTRO -->
+                <div id="register-form" class="form-container">
+                    <h2>Cadastro</h2>
+                    <form action="Login_PHP/cadastrar.php" method="POST" enctype="multipart/form-data">
+                        <input type="text " name="nome_usuario" placeholder="Usuário" required />
+                        <input type="password" name="senha" placeholder="Senha" required />
+
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                    <p class="signup-text">Já tem conta? <a href="#" id="show-login">Voltar para login</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const registerForm = document.getElementById("register-form");
+        const showRegister = document.getElementById("show-register");
+        const showLogin = document.getElementById("show-login");
+
+        showRegister.addEventListener("click", (e) => {
+            e.preventDefault();
+            loginForm.classList.remove("active");
+            registerForm.classList.add("active");
+        });
+
+        showLogin.addEventListener("click", (e) => {
+            e.preventDefault();
+            registerForm.classList.remove("active");
+            loginForm.classList.add("active");
+        });
+
+    </script>
+    
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+
+</html>

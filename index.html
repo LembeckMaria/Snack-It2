@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackIt</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23a7e280be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo_snack_it.png" alt="">
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu"> 
+                    <li><a href="filmes-series.html">Filmes & Séries</a></li>
+                    <li><a href="veganas.html">Veganas</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="originais.html">Originais</a></li>
+                    <li><a href="sobre.html"><i class="fa-solid fa-question"></i></a></li> 
+                    <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="login.html" class="active"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Descubra Novas Experiências Culinárias</h2>
+                <p>Transforme momentos de filmes, séries e desenhos em sabores incríveis!</p>
+                <a href="#categorias" class="btn">Explorar Receitas</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorias de Receitas</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-img" id="filmes-series-img">
+                        <img src="images/filmeseseries.jpg" alt="">
+                    </div>
+                    <h3>Filmes & Séries</h3>
+                    <p>Receitas inspiradas nos seus filmes e séries favoritos.</p>
+                    <a href="filmes-series.html" class="btn-outline">Ver Receitas</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="veganas-img">
+                        <img src="images/comidavegana.jpg" alt="">
+                    
+                    </div>    
+                        <div class="arrow">
+                        </div>
+                    <h3>Veganas</h3>
+                    <p>Deliciosas opções sem ingredientes de origem animal.</p>
+                    <a href="veganas.html" class="btn-outline">Ver Receitas</a>
+                    
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="fitness-img">
+                        <img src="images/comidafitness.jpg" alt="">
+                    </div>
+                    <h3>Fitness</h3>
+                    <p>Receitas saudáveis e nutritivas para seu bem-estar.</p>
+                    <a href="fitness.html" class="btn-outline">Ver Receitas</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="originais-img">
+                        <img src="images/originais.webp" alt="">
+                    </div>
+                    <h3>Originais</h3>
+                    <p>Criações exclusivas para surpreender no dia a dia.</p>
+                    <a href="originais.html" class="btn-outline">Ver Receitas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Receitas em Destaque</h2>
+            <div class="featured-grid">
+                <div class="recipe-card">
+                    <div class="recipe-img" id="featured-1">
+                        <img src="images/waffle.jpg" alt="">
+                    </div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Filmes & Séries</span>
+                        <h3>Waffle da Eleven de "Stranger Things"</h3>
+                        <p>Deliciosos waffles inspirados na série Stranger Things, perfeitos para o café da manhã.</p>
+                        <a href="filmes-series.html#waffle-eleven" class="btn-text">Ver Receita</a>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-img" id="featured-2">
+                        <img src="images/hamburguer-vegano.jpg" alt="">
+                    </div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Veganas</span>
+                        <h3>Hambúrguer de Feijão com Beterraba</h3>
+                        <p>Um hambúrguer vegano delicioso e nutritivo, perfeito para qualquer refeição.</p>
+                        <a href="veganas.html#hamburguer-feijao" class="btn-text">Ver Receita</a>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-img" id="featured-3">
+                        <img src="images/hamburguer-salmao.webp" alt="">
+                    </div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Fitness</span>
+                        <h3>Hambúrguer de Salmão</h3>
+                        <p>Uma opção saudável e rica em proteínas para quem busca uma alimentação equilibrada.</p>
+                        <a href="fitness.html#hamburguer-salmao" class="btn-text">Ver Receita</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SnackIt</h2>
+                    
+                    <p>Receitas especiais para todos os gostos</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="filmes-series.html">Filmes & Séries</a></li>
+                        <li><a href="veganas.html">Veganas</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                        <li><a href="originais.html">Originais</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SnackIt. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

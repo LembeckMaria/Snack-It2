@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil - SnackIt</title>
+  <link rel="stylesheet" href="Login_PHP/perfil.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/23a7e280be.js" crossorigin="anonymous"></script>
+</head>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo_snack_it.png" alt="">
+      </div>
+      <nav>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu">
+          <li><a href="filmes-series.html">Filmes & Séries</a></li>
+          <li><a href="veganas.html">Veganas</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li><a href="originais.html">Originais</a></li>
+          <li><a href="sobre.html"><i class="fa-solid fa-question"></i></a></li>
+          <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="login.html" class="active"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="perfil-container">
+    <div class="perfil-card">
+      <div class="welcome-section">
+        <h1>Bem vindo, SEU NOME!</h1>
+      </div>
+
+      <div class="user-info-header">
+        <!-- Foto do usuário -->
+        <div class="foto-perfil">
+          <img src="imgs_sobre/Mabi.jfif" alt="Foto do perfil">
+        </div>
+
+        <!-- Nome do usuário -->
+        <h2>Nome do Usuário</h2>
+
+        <!-- Email do usuario-->
+        <p>emaildousuario@gmail.com</p>
+
+         <!-- Botões -->
+          <div class="botoes">
+            <div class="btn-editar-conta">
+            <a href="editar_perfil.php" class="btn">Editar Perfil</a>
+          </div>
+          <div class="logout-btn">
+            <a href="logout.php" class="btn sair">Sair</a>
+          </div>
+          </div>
+        </div>
+      </div>
+        <!-- Receitas favoritas -->
+        <h3>Receitas Favoritas</h3>
+        <div class="grid-receitas">
+          <div class="receita-card" data-id="receita-1">
+            <div class="receita-imagem">
+              <img src="receitas/imgs/espaguette.png" alt="Receita 1">
+              <!-- estrela como botão (SVG) -->
+              <button class="favorite-star" aria-label="Favoritar receita" title="Favoritar">
+                <!-- SVG star (usa currentColor) -->
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="receita-conteudo">
+              <h4>Nome Da Receita</h4>
+              <p>kafb ahsdfh ashdbflasbdlhbLUHFbLUHEBFulweyfbuwehyfblhwebbvlujhbvlcHvlcuhBLuchBuCHYVQUEGCBLahbCLiuqybevFOUEWFVBCHBCILquhefO8YGWEBFLYHBEDCLqihbeFPIY8gbefuyhqEBLFCbqeifcbyQOEIYFBwefoaFJJINIFBhihfbeipHABDOIFHboifhbOISHFBOIhabfoiHBOFIHWABIODF</p>
+            </div>
+          </div>
+
+          <!-- CARD 1 – Bobó de Palmito -->
+          <div class="receita-card" data-id="receita-bobo-palmito">
+            <div class="receita-imagem">
+              <img src="receitas/imgs/bobo-palmito.jpg" alt="Receita 2">
+
+              <!-- Estrela -->
+              <button class="favorite-star" aria-label="Favoritar receita" title="Favoritar">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="receita-conteudo">
+              <h4>Bobó de Palmito Vegano</h4>
+              <p>descrição da receita</p>
+            </div>
+          </div>
+
+
+          <!-- CARD 2 – Hambúrguer de Beterraba -->
+          <div class="receita-card" data-id="receita-hamburguer-beterraba">
+            <div class="receita-imagem">
+              <img src="receitas/imgs/hamburguer-beterraba.webp" alt="Receita 3">
+
+              <!-- Estrela -->
+              <button class="favorite-star" aria-label="Favoritar receita" title="Favoritar">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="receita-conteudo">
+              <h4>Hambúrguer de Beterraba</h4>
+              <p>descrição da receita</p>
+            </div>
+          </div>
+
+
+         
+      <script src="js/dark-mode.js"></script>
+</body>
+
+</html>

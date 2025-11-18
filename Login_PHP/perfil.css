@@ -1,0 +1,373 @@
+:root {
+    --primary-color:#cf92a5;
+    --secondary-color: #C75C71;
+    --third-color:#881c34;
+    --other-color:  #560F20;
+    --text-color: #333333;
+    --light-gray: #F5F5F5;
+    --medium-gray: hsl(37, 100%, 96%);
+    --dark-gray: #666666;
+    --white: #F5F5F5;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 0;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+}
+
+  /* Header */
+                                                                                                                                                    header {
+                                                                                                                                                        background-color: var(--white);
+                                                                                                                                                            box-shadow: var(--shadow);
+                                                                                                                                                                position: sticky;
+                                                                                                                                                                    top: 0;
+                                                                                                                                                                        z-index: 1000;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        header .container {
+                                                                                                                                                                            display: flex;
+                                                                                                                                                                                justify-content: space-between;
+                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                        padding: 1rem 15px;
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        .logo h1 {
+                                                                                                                                                                                            font-size: 1.8rem;
+                                                                                                                                                                                                color: var(--primary-color);
+                                                                                                                                                                                                    margin: 0;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .logo {
+                                                                                                                                                                                                        margin: 0%;
+                                                                                                                                                                                                            padding: 0;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .logo img {
+                                                                                                                                                                                                                width: 110px;
+                                                                                                                                                                                                                    padding: 0;
+                                                                                                                                                                                                                        margin: 0;
+                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                        .menu {
+                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            .menu li {
+                                                                                                                                                                                                                                margin-left: 1.5rem;
+                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                .menu a {
+                                                                                                                                                                                                                                    font-weight: 500;
+                                                                                                                                                                                                                                        padding: 0.5rem 0;
+                                                                                                                                                                                                                                            position: relative;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            .menu a::after {
+                                                                                                                                                                                                                                                content: '';
+                                                                                                                                                                                                                                                    position: absolute;
+                                                                                                                                                                                                                                                        bottom: 0;
+                                                                                                                                                                                                                                                            left: 0;
+                                                                                                                                                                                                                                                                width: 0;
+                                                                                                                                                                                                                                                                    height: 2px;
+                                                                                                                                                                                                                                                                        background-color: var(--primary-color);
+                                                                                                                                                                                                                                                                            transition: var(--transition);
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                            .menu a:hover::after,
+                                                                                                                                                                                                                                                                            .menu a.active::after {
+                                                                                                                                                                                                                                                                                width: 100%;
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                .mobile-menu-btn {
+                                                                                                                                                                                                                                                                                    display: none;
+                                                                                                                                                                                                                                                                                        background: none;
+                                                                                                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                .mobile-menu-btn span {
+                                                                                                                                                                                                                                                                                                    display: block;
+                                                                                                                                                                                                                                                                                                        width: 25px;
+                                                                                                                                                                                                                                                                                                            height: 3px;
+                                                                                                                                                                                                                                                                                                                background-color: var(--text-color);
+                                                                                                                                                                                                                                                                                                                    margin: 5px 0;
+                                                                                                                                                                                                                                                                                                                        transition: var(--transition);
+                                                                                                                                                                                                                                                                                                                        }
+
+
+/* Estrutura Principal */
+
+.welcome-section {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--light-gray);
+}
+
+/* ---------------------------------- */
+/* Seção de Perfil do Usuário */
+/* ---------------------------------- */
+
+.perfil-card {
+    /* O card principal do seu HTML não tem um fundo branco, ele é apenas um container. */
+    /* Vou focar em estilizar os elementos internos para replicar o layout do protótipo. */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.user-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--secondary-color); /* Cor do círculo rosa */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* No protótipo, parece ser apenas um círculo rosa. Se for uma imagem, remova o 'display: none;' */
+
+}
+
+.username-email p {
+    margin: 0;
+}
+
+.username-email .username {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--cor-texto-principal);
+}
+
+.username-email .email {
+    font-size: 0.9em;
+    color: var(--cor-texto-secundario);
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logout-btn a {
+    color: #222;
+    transition: 0.2s;
+}
+
+.logout-btn a:hover {
+    color: #881c34;
+}
+
+.btn-editar-conta {
+    padding: 8px 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.btn-editar-conta:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-gray);
+    text-decoration: none;
+}
+
+/* ---------------------------------- */
+/* Seção de Receitas Favoritas */
+/* ---------------------------------- */
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+
+.grid-receitas {
+    display:flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.receita-card {
+    background: #fff;
+    width: 380px;
+    height: 400px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+/* garante que o container da imagem posicione o botão corretamente */
+.receita-imagem {
+  position: relative; /* IMPORTANT */
+  overflow: hidden;   /* mantém bordas arredondadas da imagem */
+  height: 220px;      /* ou o valor que já usa */
+}
+
+/* botão estrela */
+.favorite-star {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 40;                /* garante que fique sobre a imagem */
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.85); /* leve fundo para contrastar */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  color: #cfcfcf;             /* cor da estrela vazia */
+  cursor: pointer;
+  transition: transform .15s ease, color .2s ease, background .2s ease;
+}
+
+/* hover acessível */
+.favorite-star:hover { transform: scale(1.06); }
+
+/* usa currentColor do botão para colorir o SVG */
+.favorite-star svg { display:block; fill: currentColor; }
+
+/* estado favoritado */
+.favorite-star.favorited {
+  background: linear-gradient(180deg,#ffd54a,#f2b705); /* dourado suave */
+  color: #ffffff; /* estrela preenchida em branco sobre dourado */
+  transform: scale(1.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+/* opcional: acessibilidade de foco */
+.favorite-star:focus {
+  outline: 2px solid rgba(100,100,100,0.15);
+  outline-offset: 3px;
+}
+
+
+
+.receita-imagem {
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.receita-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.receita-conteudo {
+    padding: 18px;
+}
+
+.receita-conteudo h4 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.receita-conteudo p {
+    font-size: 0.9rem;
+    color: #555;
+}
