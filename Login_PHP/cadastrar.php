@@ -23,9 +23,13 @@ $stmt = $conn->prepare("INSERT INTO login (nome_usuario, senha) VALUES (?, ?)");
 $stmt->bind_param("ss", $nome_usuario, $senha_hash);
 
 if ($stmt->execute()) {
-    echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href = '../login.html';</script>";
+    $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso! Faça login para continuar.";
+    header("Location: ../login.php");
+    exit();
 } else {
-    echo "Erro ao cadastrar: " . $stmt->error;
+    $_SESSION['mensagem_erro'] = "Erro ao cadastrar: " . $stmt->error;
+    header("Location: ../login.php");
+    exit();
 }
 
 $stmt->close();

@@ -9,7 +9,280 @@
     --dark-gray: #666666;
     --white: #F5F5F5;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0/* ===================================== */
+/* PERFIL - SNACKIT                      */
+/* ===================================== */
+
+:root {
+    --primary-color: #cf92a5;
+    --secondary-color: #C75C71;
+    --third-color: #881c34;
+    --other-color: #560F20;
+    --text-color: #333333;
+    --light-gray: #F5F5F5;
+    --medium-gray: hsl(37, 100%, 96%);
+    --dark-gray: #666666;
+    --white: #F5F5F5;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* ===================================== */
+/* CONTAINER DO PERFIL                   */
+/* ===================================== */
+
+.perfil-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ===================================== */
+/* HEADER DO PERFIL (TOPO AMARELO/ROSA)  */
+/* ===================================== */
+
+.perfil-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 60px 40px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.foto-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-wrapper img,
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--secondary-color);
+}
+
+.perfil-header p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================== */
+/* CORPO DO PERFIL (CONTEÚDO BRANCO)     */
+/* ===================================== */
+
+.perfil-body {
+    padding: 40px;
+}
+
+.perfil-body h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: var(--third-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.perfil-body > p {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+}
+
+.perfil-body h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: var(--third-color);
+}
+
+/* ===================================== */
+/* GRID DE RECEITAS FAVORITAS            */
+/* ===================================== */
+
+.grid-receitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.receita {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.receita:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.receita img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.receita p {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Mensagem quando não há receitas */
+.grid-receitas > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    padding: 40px;
+}
+
+/* ===================================== */
+/* BOTÕES DE AÇÃO                        */
+/* ===================================== */
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.acoes .btn {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.acoes .editar {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px solid var(--secondary-color);
+}
+
+.acoes .editar:hover {
+    background-color: var(--third-color);
+    border-color: var(--third-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.acoes .sair {
+    background-color: transparent;
+    color: var(--third-color);
+    border: 2px solid var(--third-color);
+}
+
+.acoes .sair:hover {
+    background-color: var(--third-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================== */
+/* RESPONSIVIDADE                        */
+/* ===================================== */
+
+@media (max-width: 768px) {
+    .perfil-container {
+        margin: 20px;
+        border-radius: 8px;
+    }
+
+    .perfil-header {
+        padding: 40px 20px 30px;
+    }
+
+    .foto-wrapper img,
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .perfil-header p {
+        font-size: 1rem;
+    }
+
+    .perfil-body {
+        padding: 30px 20px;
+    }
+
+    .perfil-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .perfil-body h3 {
+        font-size: 1.4rem;
+        margin-top: 40px;
+    }
+
+    .grid-receitas {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .acoes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .acoes .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-receitas {
+        grid-template-columns: 1fr;
+    }
+}
+.3s ease;
 }
 
 

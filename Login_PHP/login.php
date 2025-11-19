@@ -24,20 +24,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION['id_usuario'] = $dados['id_usuario'];
             $_SESSION['nome_usuario'] = $dados['nome_usuario'];
             
-            header("Location: ../index.html ");
+            header("Location: perfil.php");
             exit();
         } else {
-            echo "<script>alert('Senha incorreta.'); window.location.href='../login.html';</script>";
+            $_SESSION['mensagem_erro'] = "Senha incorreta.";
+            header("Location: ../login.php");
+            exit();
         }
     } else {
-        echo "<script>alert('Usuário não encontrado.'); window.location.href='../login.html';</script>";
+        $_SESSION['mensagem_erro'] = "Usuário não encontrado.";
+        header("Location: ../login.php");
+        exit();
     }
 
     $stmt->close();
     $conn->close();
 } else {
     // Se tentar acessar o login.php sem usar POST
-    header("Location: ../login.html");
+    header("Location: ../login.php");
     exit();
 }
 ?>

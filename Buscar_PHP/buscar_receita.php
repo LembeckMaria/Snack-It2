@@ -46,7 +46,7 @@ if (empty($searchTerm)) {
         while($row = $result->fetch_assoc()) {
             $results[] = $row;
         }
-        $message = "Encontradas " . count($results) . " receita(s) para '" . htmlspecialchars($searchTerm) . "'.";
+        $message = "Encontradas " . count($results) . " receita(s) para '<strong>" . htmlspecialchars($searchTerm) . "</strong>'<br><br>";
     } else {
         $message = "Nenhuma receita encontrada para '" . htmlspecialchars($searchTerm) . "'.";
     }

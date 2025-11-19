@@ -1,0 +1,15 @@
+.heart-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 28px;
+    color: #bbbbbb !important; /* cinza inicial */
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.heart-btn.favorited {
+    color: red !important;      /* vermelho quando favoritado */
+    transform: scale(1.2);
+}
