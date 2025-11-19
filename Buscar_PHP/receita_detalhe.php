@@ -20,7 +20,10 @@ if ($id_receita <= 0) {
 }
 
 // Busca os dados da receita
-$stmt = $conn->prepare("SELECT id_receita, titulo, descricao, preparo, foto FROM receitas WHERE id_receita = ?");
+$stmt = $conn->prepare("SELECT id_receita, titulo, descricao, preparo, ingredientes, foto 
+                        FROM receitas 
+                        WHERE id_receita = ?");
+
 $stmt->bind_param("i", $id_receita);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -176,12 +179,13 @@ $conn->close();
                     </div>
                 <?php endif; ?>
 
-                  <?php if (!empty($receita['ingredientes'])): ?>
-                    <div class="recipe-section">
-                        <h2><i class="fa-solid fa-info-circle"></i> Ingredientes</h2>
-                        <p><?php echo nl2br(htmlspecialchars($receita['ingredientes'])); ?></p>
-                    </div>
-                <?php endif; ?>
+                 <?php if (!empty($receita['ingredientes'])): ?>
+    <div class="recipe-section">
+        <h2><i class="fa-solid fa-info-circle"></i> Ingredientes</h2>
+        <p><?php echo nl2br(htmlspecialchars($receita['ingredientes'])); ?></p>
+    </div>
+<?php endif; ?>
+
                 
                 <?php if (!empty($receita['preparo'])): ?>
                     <div class="recipe-section">
