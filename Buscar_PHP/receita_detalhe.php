@@ -175,6 +175,13 @@ $conn->close();
                         <p><?php echo nl2br(htmlspecialchars($receita['descricao'])); ?></p>
                     </div>
                 <?php endif; ?>
+
+                  <?php if (!empty($receita['ingredientes'])): ?>
+                    <div class="recipe-section">
+                        <h2><i class="fa-solid fa-info-circle"></i> Ingredientes</h2>
+                        <p><?php echo nl2br(htmlspecialchars($receita['ingredientes'])); ?></p>
+                    </div>
+                <?php endif; ?>
                 
                 <?php if (!empty($receita['preparo'])): ?>
                     <div class="recipe-section">
