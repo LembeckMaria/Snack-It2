@@ -1367,6 +1367,10 @@ footer {
     font-size: 35px;
 }
 
+.btn-search {
+    
+}
+
 .all-container {
     width: 100%;
     margin-top: 32px;
@@ -1496,7 +1500,7 @@ input {
   text-decoration: none;
 }
 
-button {
+.login-btn {
   padding: 12px;
   background-color:var(--primary-color);
   color: white;
@@ -1507,7 +1511,37 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.login-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-search {
+    width: 70px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: var(--light-gray);
+    border: none;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.cadastrar-btn {
+  padding: 12px;
+  background-color:var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cadastrar-btn:hover {
   background-color: var(--secondary-color);
 }
 
