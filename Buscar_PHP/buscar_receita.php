@@ -131,7 +131,7 @@ $conn->close();
                     <?php foreach ($results as $receita): ?>
                         <div class="result-card">
                             <!-- A foto da receita está na coluna 'foto'. Assumindo que o caminho é relativo a '../images/' -->
-                            <img src="../images/<?php echo htmlspecialchars($receita['foto']); ?>" alt="<?php echo htmlspecialchars($receita['titulo']); ?>">
+                            <img src="imgs/<?php echo htmlspecialchars($receita['foto']); ?>" alt="<?php echo htmlspecialchars($receita['titulo']); ?>">
                             <div class="result-content">
                                 <h3><?php echo htmlspecialchars($receita['titulo']); ?></h3>
                                 <p><?php echo htmlspecialchars(substr($receita['descricao'], 0, 150)) . '...'; ?></p>
