@@ -281,6 +281,745 @@ img {
     margin-bottom: 1rem;
 }
 
+
+.image-mat {
+    position: absolute;
+    background-image: url('imgs/bolo-chocolate-matilda.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-mat.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+.image-mat.parou {
+  position: absolute;
+}
+
+.image-frang-quinoa {
+    position: absolute;
+    background-image: url('imgs/frang-quinoa.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-frang-quinoa.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+.image-mat.parou {
+  position: absolute;
+}
+
+
+.image-dama {
+    position: absolute;
+    background-image: url('imgs/espaguette.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-dama.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-dama.parou {
+  position: absolute;
+}
+
+.image-apf {
+    position: absolute;
+    background-image: url('imgs/apfelstrudel.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-apf.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-apf.parou {
+  position: absolute;
+}
+
+.image-raspadinha {
+    position: absolute;
+    background-image: url('imgs/raspadinha-de-melancia-1024x683.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-raspadinha.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+.image-raspadinha.parou {
+  position: absolute;
+}
+
+.image-rat {
+    position: absolute;
+    background-image: url('imgs/ratatoullie.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-rat.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-rat.parou {
+  position: absolute;
+}
+
+.image-seren {
+    position: absolute;
+    background-image: url('imgs/Serendipity-Frozen-Hot-Chocolate.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-seren.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-seren.parou {
+  position: absolute;
+}
+
+
+.image-beterraba {
+    position: absolute;
+    background-image: url('imgs/hamburguer-beterraba.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-beterraba.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+.image-beterraba.parou {
+  position: absolute;
+}
+
+.image-manteiga {
+    position: absolute;
+    background-image: url('imgs/manteiga-caju.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-manteiga.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-manteiga.parou {
+  position: absolute;
+}
+
+.image-bibimbap {
+    position: absolute;
+    background-image: url('imgs/bibimbap.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-bibimbap.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+.image-bibimbap.parou {
+  position: absolute;
+}
+
+.image-omelete {
+    position: absolute;
+    background-image: url('imgs/omelete.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-omelete.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-omelete.parou {
+  position: absolute;
+}
+
+
+.image-stroopwafel {
+    position: absolute;
+    background-image: url('imgs/stroopwafel.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-stroopwafel.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-stroopwafel.parou {
+  position: absolute;
+}
+
+ 
+.image-strogonoff-vegano {
+    position: absolute;
+    background-image: url('imgs/strogonoff-vegano.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-strogonoff-vegano.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-strogonoff-vegano.parou {
+  position: absolute;
+}
+
+.image-quibe-abobora {
+    position: absolute;
+    background-image: url('imgs/quibe-de-abobora.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-quibe-abobora.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-quibe-abobora.parou {
+  position: absolute;
+}
+
+.container-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#cf92a5;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+         h1{
+            font-size: 45px;
+            z-index: 1;
+            color: hsl(346, 85%, 95%);
+           
+        }
+    }  
+     
+}
+
+.all {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 820px;
+}
+
+.image-pao-de-queijo-fit {
+    position: absolute;
+    background-image: url('imgs/pao-de-queijo-fit.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-pao-de-queijo-fit.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-pao-de-queijo-fit.parou {
+  position: absolute;
+}
+
+
+.image-espaguette-abo {
+    position: absolute;
+    background-image: url('imgs/espaguette-abobrinha.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-espaguette-abo.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-espaguette-abo.parou {
+  position: absolute;
+}
+
+.image-ceviche-tilapia {
+    position: absolute;
+    background-image: url('imgs/ceviche-tilapia.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-ceviche-tilapia.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-ceviche-tilapia.parou {
+  position: absolute;
+}
+
+.image-ham-frang-abo {
+    position: absolute;
+    background-image: url('imgs/hamburguer-frango-abo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-ham-frang-abo.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-ham-frang-abo.parou {
+  position: absolute;
+}
+
+.image-tapioca-fit {
+    position: absolute;
+    background-image: url('imgs/tapioca-fit.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-tapioca-fit.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-tapioca-fit.parou {
+  position: absolute;
+}
+
+.image-torta-frang-bttdoce {
+    position: absolute;
+    background-image: url('imgs/torta-frang-bttdoce.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-torta-frang-bttdoce.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-torta-frang-bttdoce.parou {
+  position: absolute;
+}
+
+
+.image-peito-de-frango-fitness {
+    position: absolute;
+    background-image: url('imgs/peito-de-frango-arroz.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-peito-de-frango-fitness.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+
+.image-peito-de-frango-fitness.parou {
+  position: absolute;
+}
+
+.image-strogonoff {
+    position: absolute;
+    background-image: url('imgs/strogonoff-fitness.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+ 
+.image-strogonoff.fixo{
+    position: fixed;
+    top: 200px;    
+    margin-top: 5px;
+}
+
+.image-strogonoff.parou {
+  position: absolute;
+}
+
+
+.image {
+    position: absolute;
+    background-image: url('imgs/notherwaffle.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+    transition: all ;
+}
+
+.image.fixo{
+    position: fixed;
+    top: 500px;     
+    margin-top: 5px; 
+}
+
+.image.parou {
+  position: absolute;
+}
+
+.container-recipe {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+
+    h2 {
+        font-size: 37px;
+        margin-top: 50px;
+    }
+
+
+    .desc p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 30px;
+        color: #bd7181;
+    }
+
+    .ingredients ul{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+     .preparo{
+        margin-top: 50px;
+        margin-left: 17px;
+    }
+
+    .preparo ul{
+        margin-top: 30px;
+        list-style: decimal;
+        font-size: 19px;
+        margin-left: 10px;
+    }
+
+    .preparo li {
+        margin-top: 20px;
+    }
+
+    .utensilios{
+        margin-top: 50px;
+    }
+
+     .utensilios ul{
+        margin-top: 30px;
+        font-size: 19px;
+        list-style: inside;
+    }
+
+
+
+    .espec {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .time {
+        width: 140px;
+        height: 140px;
+        background-color:var(--third-color);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+        transition-duration: 0.2s;
+
+        i {
+            color: var(--primary-color);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 35px;
+        }
+
+        li {
+            color: var(--primary-color);
+            list-style: none;
+        }
+    }
+    .time:hover {
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+        transform: scale(1.01);
+    }
+
+    .people {
+        width: 140px;
+        height: 140px;
+        background-color: var(--third-color);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+        transition-duration: 0.2s;
+
+        i {
+            color: var(--primary-color);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 35px;
+        }
+
+        li {
+            color: var(--primary-color);
+            list-style: none;
+        }
+    }
+}
+    .people:hover {
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+        transform: scale(1.01);
+    }
+
+    .level {
+        width: 140px;
+        height: 140px;
+        background-color: var(--third-color);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.295);
+        transition-duration: 0.2s;
+
+        i {
+            color: var(--primary-color);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 35px;
+        }
+
+        li {
+            color: var(--primary-color);
+            list-style: none;
+        }
+    }
+    .level:hover {
+        box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+        transform: scale(1.01);
+    }
+
+.all h2 {
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+.image:hover {
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.295);
+    transform: scale(1.01);
+}
+
 #filmes-series-img {
     background-image: url('../images/filmes-series.jpg');
 }

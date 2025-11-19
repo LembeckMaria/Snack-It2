@@ -105,6 +105,9 @@
 [data-theme="dark"] footer {
     background-color: #0a0a0a;
 }
+[data-theme="dark"] .footer-bottom {
+   color: rgb(255, 242, 242);
+}
 
 [data-theme="dark"] .footer-links a:hover {
     color: var(--primary-color);
@@ -135,6 +138,10 @@
 
 [data-theme="dark"] .about-section {
     background-color: var(--white);
+}
+
+[data-theme="dark"] .container-banner h1{
+    color: var(--white);
 }
 
 [data-theme="dark"] .about-text h2 {
