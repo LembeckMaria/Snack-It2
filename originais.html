@@ -31,6 +31,12 @@
                     <span></span>
                 </button>
                 <ul class="menu">
+                    <form method="GET" action="Buscar_PHP/buscar.php">
+                        <button class="btn-search" type="submit">Buscar</button>
+                        <input type="text" name="q" placeholder="Buscar receita" required>
+
+                    </form>
+
                     <li><a href="filmes-series.html">Filmes & Séries</a></li>
                     <li><a href="veganas.html">Veganas</a></li>
                     <li><a href="fitness.html">Fitness</a></li>
@@ -50,135 +56,143 @@
         </div>
     </section>
 
-<div class="recipes">
-    <section class="recipes-grid">
-        <div class="container">
-            <div class="recipe-card" id="hamburguer-salmao">
-                <div class="recipe-img" style="background-image: url('images/bibimpab.jpg');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Coreia do Sul</span>
-                    <h3>Bibimbap</h3>
-                    <p>Bibimbap é um prato tradicional coreano à base de arroz, legumes variados, carne e ovo, servido com o molho picante Gochujang. Colorido, nutritivo e cheio de sabor, pode ser adaptado com os ingredientes que você tiver em casa.</p>
-                    <a href="bibimpab.html" class="btn-text">Ver Receita Completa</a>
+    <div class="recipes">
+        <section class="recipes-grid">
+            <div class="container">
+                <div class="recipe-card" id="hamburguer-salmao">
+                    <div class="recipe-img" style="background-image: url('images/bibimpab.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Coreia do Sul</span>
+                        <h3>Bibimbap</h3>
+                        <p>Bibimbap é um prato tradicional coreano à base de arroz, legumes variados, carne e ovo,
+                            servido com o molho picante Gochujang. Colorido, nutritivo e cheio de sabor, pode ser
+                            adaptado com os ingredientes que você tiver em casa.</p>
+                        <a href="bibimpab.html" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/Pizza napolitana.png');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Itália</span>
-                    <h3>Pizza Napoletana</h3>
-                    <p>A Pizza Napoletana é um prato tradicional da Itália, com massa fina e macia, molho de tomate fresco, mozzarella de búfala e manjericão, reconhecida pela UNESCO como Patrimônio Imaterial da Humanidade.</p>
-                    <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/Pizza napolitana.png');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Itália</span>
+                        <h3>Pizza Napoletana</h3>
+                        <p>A Pizza Napoletana é um prato tradicional da Itália, com massa fina e macia, molho de tomate
+                            fresco, mozzarella de búfala e manjericão, reconhecida pela UNESCO como Patrimônio Imaterial
+                            da Humanidade.</p>
+                        <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/potpotofu.jpg');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">China</span>
-                    <h3>Potputofu</h3>
-                    <p>Tofu macio com molho apimentado.</p>
-                    <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/potpotofu.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">China</span>
+                        <h3>Potputofu</h3>
+                        <p>Tofu macio com molho apimentado.</p>
+                        <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/frango-tandoori.webp');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Tailândia/Índia</span>
-                    <h3>Frango Tangori </h3>
-                    <p> Frango temperado com especiarias. </p>
-                    <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/frango-tandoori.webp');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Tailândia/Índia</span>
+                        <h3>Frango Tangori </h3>
+                        <p> Frango temperado com especiarias. </p>
+                        <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/burrito-de-frango.jpg');"></div>
-                <div class="recipe-content">
-                     <span class="recipe-category">México</span>
-                    <h3>Burrito</h3>
-                    <p>Tortilhas recheadas com carne, feijão, queijo e outros acompanhamentos.</p>
-                    <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/burrito-de-frango.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">México</span>
+                        <h3>Burrito</h3>
+                        <p>Tortilhas recheadas com carne, feijão, queijo e outros acompanhamentos.</p>
+                        <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/paella.jpg');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Espanha</span>
-                    <h3>Paella</h3>
-                    <p> Arroz espanhol preparado com frutos do mar, frango e legumes, cozido em caldo temperado.</p>
-                    <a href="#frango-quinoa-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/paella.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Espanha</span>
+                        <h3>Paella</h3>
+                        <p> Arroz espanhol preparado com frutos do mar, frango e legumes, cozido em caldo temperado.</p>
+                        <a href="#frango-quinoa-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="recipes-grid">
-        <div class="container">
-            <div class="recipe-card" id="hamburguer-salmao">
-                <div class="recipe-img" style="background-image: url('images/stroopwafel.png');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Holanda</span>
-                    <h3>Stroopwafel</h3>
-                    <p> Biscoito fino e crocante recheado com caramelo, tradicional da culinária holandesa.</p>
-                    <a href="stroopwafel.html" class="btn-text">Ver Receita Completa</a>
+        <section class="recipes-grid">
+            <div class="container">
+                <div class="recipe-card" id="hamburguer-salmao">
+                    <div class="recipe-img" style="background-image: url('images/stroopwafel.png');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Holanda</span>
+                        <h3>Stroopwafel</h3>
+                        <p> Biscoito fino e crocante recheado com caramelo, tradicional da culinária holandesa.</p>
+                        <a href="stroopwafel.html" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/ceviche-de-tilapia-portal-minha-receita-1200x480.webp ');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Peru</span>
-                    <h3>Ceviche de tilápia</h3>
-                    <p>Fresco e leve, esse prato é rico em proteína e baixo em calorias.</p>
-                    <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img"
+                        style="background-image: url('images/ceviche-de-tilapia-portal-minha-receita-1200x480.webp ');">
+                    </div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Peru</span>
+                        <h3>Ceviche de tilápia</h3>
+                        <p>Fresco e leve, esse prato é rico em proteína e baixo em calorias.</p>
+                        <a href="#salgadinho-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/guacamole.jpg');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">México</span>
-                    <h3>Guacamole </h3>
-                    <p>Molho cremoso de abacate temperado com cebola, tomate, limão e coentro, servido com nachos.</p>
-                    <a href="#almondega-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/guacamole.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">México</span>
+                        <h3>Guacamole </h3>
+                        <p>Molho cremoso de abacate temperado com cebola, tomate, limão e coentro, servido com nachos.
+                        </p>
+                        <a href="#almondega-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/polpettone.webp');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Itália</span>
-                    <h3>Polpettone</h3>
-                    <p>Bolinho grande de carne moída recheado com queijo ou presunto, semelhante a uma almôndega gigante.</p>
-                    <a href="#sopa-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/polpettone.webp');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Itália</span>
+                        <h3>Polpettone</h3>
+                        <p>Bolinho grande de carne moída recheado com queijo ou presunto, semelhante a uma almôndega
+                            gigante.</p>
+                        <a href="#sopa-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/mochi-morago.jpg');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Japão</span>
-                    <h3>Mochi de Morango</h3>
-                    <p>Uma refeição completa que combina proteínas e carboidratos complexos.</p>
-                    <a href="#torta-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/mochi-morago.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Japão</span>
+                        <h3>Mochi de Morango</h3>
+                        <p>Uma refeição completa que combina proteínas e carboidratos complexos.</p>
+                        <a href="#torta-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="recipe-card">
-                <div class="recipe-img" style="background-image: url('images/tiramisu.jpg');"></div>
-                <div class="recipe-content">
-                    <span class="recipe-category">Itália</span>
-                    <h3>Tiramisu</h3>
-                    <p>Uma sobremesa cremosa e sofisticada com camadas de café e cacau.</p>
-                    <a href="#frango-quinoa-recipe" class="btn-text">Ver Receita Completa</a>
+                <div class="recipe-card">
+                    <div class="recipe-img" style="background-image: url('images/tiramisu.jpg');"></div>
+                    <div class="recipe-content">
+                        <span class="recipe-category">Itália</span>
+                        <h3>Tiramisu</h3>
+                        <p>Uma sobremesa cremosa e sofisticada com camadas de café e cacau.</p>
+                        <a href="#frango-quinoa-recipe" class="btn-text">Ver Receita Completa</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
 
     <footer>
@@ -215,7 +229,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-        <script src="js/dark-mode.js"></script>
+    <script src="js/dark-mode.js"></script>
 </body>
 
 </html>
