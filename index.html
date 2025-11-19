@@ -19,6 +19,9 @@
     <header>
         <div class="container">
             <div class="logo">
+            </div>
+
+            <div class="logo">
                 <img src="images/logo_snack_it.png" alt="">
             </div>
             <nav>
@@ -27,9 +30,15 @@
                     <span></span>
                     <span></span>
                 </button>
-                
+
 
                 <ul class="menu">
+
+                    <form action="Buscar_PHP/buscar_receita.php" method="GET" class="search-form">
+                        <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" name="query" placeholder="Buscar receitas..." class="search-input">
+
+                    </form>
                     <li><a href="filmes-series.html">Filmes & Séries</a></li>
                     <li><a href="veganas.html">Veganas</a></li>
                     <li><a href="fitness.html">Fitness</a></li>
